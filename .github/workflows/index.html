@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>SteamMoney</title>
+</head>
+        <body>
+        
+<div class="form__group">
+    <p id="px48">Пополни баланс Steam</p>
+  <input type="text" class="form__input form__group" id="login" required="" placeholder="Ваш логин">
+  <button id="x" onclick="window.dialog.showModal();">Где получить логин Steam<img src="information.png" id="o"></button>
+  <input type="price" class="form__input form__group" id="price" required="" placeholder="100₽">
+  <p>Комиссия сервиса: 50₽</p>
+<button onclick="window.location.href = './pay/index.html'">Пополнить <img src="link.png" id="o"></button>
+  <dialog id="dialog">
+    <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+	<h2>Как получить логин?</h2>
+	<video src="https://steambalance.cc/assets/videos/steam.mp4" autoplay muted></video>
+    <p>Обратите внимание! Логин, это то, что вы указываете при входе в Steam. Если вы укажите неверный логин, то средства уйдут другому пользователю.</p>
+    <button onclick="window.location.href = 'https://store.steampowered.com/account/';">Взять его можно тут</button>
+</div>
+
+</body>
+</html>
